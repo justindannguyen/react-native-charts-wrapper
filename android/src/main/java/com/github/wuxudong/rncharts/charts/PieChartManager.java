@@ -71,16 +71,6 @@ public class PieChartManager extends ChartBaseManager<PieChart, PieEntry> {
         }
     }
 
-    @ReactProp(name = "centerText")
-    public void setCenterText(PieChart chart, String text) {
-        chart.setCenterText(text);
-    }
-
-    @ReactProp(name = "centerTextRadiusPercent")
-    public void setCenterTextRadiusPercent(PieChart chart, float radiusPercent) {
-        chart.setCenterTextRadiusPercent(radiusPercent);
-    }
-
     @ReactProp(name = "holeRadius")
     public void setHoleRadius(PieChart chart, float percent) {
         chart.setHoleRadius(percent);
