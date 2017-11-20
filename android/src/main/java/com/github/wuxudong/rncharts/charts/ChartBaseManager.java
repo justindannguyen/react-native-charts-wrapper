@@ -141,6 +141,9 @@ public abstract class ChartBaseManager<T extends Chart, U extends Entry> extends
                 BridgeUtils.validate(propMap, ReadableType.Number, "positionY")) {
             description.setPosition((float) propMap.getDouble("positionX"), (float) propMap.getDouble("positionY"));
         }
+        if (BridgeUtils.validate(propMap, ReadableType.Boolean, "enabled")) {
+            description.setEnabled(propMap.getBoolean("enabled"));
+        }
 
         chart.setDescription(description);
     }
